@@ -14,22 +14,52 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="text-light">
 
     <header>
-        <div class="jumbotron-fluid">
-            <h1>Ping-Pong</h1>
+        <div class="jumbotron-fluid text-center p-5" id="header">
+            <h1 class="display-1 text-success">Ping-Pong</h1>
         </div>
     </header>
     <section>
-        <div class="container pt-5">
-            <div>
-
+        <div class="pt-5 d-flex" id="mainContainer">
+            <div class="w-25 p-3 bg-info mr-5 text-dark">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <h3 class="display-4" >About Ping Pong</h3>
+                <h4>Created by</h4>
+                <p>Victor Ireri</p>
+                <h4>GitHub Username/URL</h4>
+                <p>url</p>
+                <h4>Level 2 test for</h4>
+                <p>Javascript</p>
             </div>
-
+            <div class="w-75 p-3">
+                <h2 class="display-3">Let's Play</h2>
+                <h3>Rules</h3>
+                <p>Ping Pong will count up to your number from 1 with the followi ng exception</p>
+                <br>
+                <ol>
+                    <li>Numbers divisible by 3 become "Ping"</li>
+                    <li>Numbers divisible by 5 become "Ping"</li>
+                    <li>Numbers divisible by 3 and 5 become "Ping-Pong!"</li>
+                </ol>
+                <div>
+                    <p>Enter your number here</p>
+                    <input type="text">
+                    <div class="btn btn-secondary"></div>
+                </div>
+                <ol>
+                    <li>
+                        <p>number/ping/pong/pingpong</p>
+                    </li>
+                </ol>
+            </div>
         </div>
     </section>
 
+    <div style="margin-top: 300px;"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"

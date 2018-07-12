@@ -1,9 +1,22 @@
 body {
+    font-family: 'Playfair Display',
+    serif;
     margin: 0;
     border: 4px black solid;
 }
 
-.jumbotron {
-    background-image: url()
+#header {
+    background-image: url('../img/landBg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 400px;
+    background-attachment: fixed;
 }
+
+#mainContainer {
+    height: 1000px;
+    background-image: url('../img/bodyBg.png')
+}
+
 
