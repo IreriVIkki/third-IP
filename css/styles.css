@@ -16,7 +16,11 @@ body {
 
 #mainContainer {
     height: 1000px;
-    background-image: url('../img/bodyBg.png')
+    background-image: url('../img/wee.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    background-attachment: fixed;
 }
 
 
