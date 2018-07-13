@@ -56,7 +56,7 @@ $(document).ready(function(){
 
     $('.playUser').click(function(){
         $('#clickToPlay').hide()
-        var tid = setTimeout($('#userInputArea').show(), 2000);
+        var tid = setTimeout($('#userInputArea').show(), 10000);
         // $('#userInputArea').show()
         $('#playBtn').removeClass('hideButton')
     });
@@ -69,12 +69,13 @@ $(document).ready(function(){
         }
         if(input > 0){
             $('#resultsSummary').show();
-                totalPing(input)
+
+            totalPing(input)
+            $('#reload').show()
         }else{
             alert('Please Enter A Valid Number!!!!')
         }
     });
-
 
     $('#playAgain').click(function () {
         window.location.reload(true);
