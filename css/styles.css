@@ -51,3 +51,7 @@ body {
     background: rgba(0, 0, 0, .5);
     width: auto;
 }
+
+#userInputArea {
+    display: none;
+}
