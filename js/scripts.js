@@ -17,15 +17,53 @@ $(document).ready(function(){
         }
     }
 
+    function totalPing(num){
+
+        if ((num % 3 === 0) && (num % 5 !== 0)) {
+            var totalPing = 0
+            for (var index = 1; index <= num; index++) {
+                totalPing += 1
+            }
+            return totalPing
+        }else if ((num % 5 === 0) && (num % 3 !== 0)) {
+            var totalPong = 0
+            for (var index = 1; index <= num; index++) {
+                totalPong += 1
+            }
+            return totalPong
+        }else if (num % 15 === 0) {
+            var totalPingPong = 0
+            for (var index = 1; index <= num; index++) {
+                totalPingPong += 1
+            }
+            return totalPingPong
+        }else{
+            var totalNull = 0
+            for (var index = 1; index <= num; index++) {
+                totalNull += 1
+            }
+            return totalNull
+        }
+    }
+
+
+
+    // user logic
+
     $('.playUser').click(function(){
+        $('#clickToPlay').hide()
         $('#userInputArea').show()
+        $('#playBtn').removeClass('hideButton')
+    });
+
+    $('#playBtn').click(function(){
         var input = parseInt($('#userInputArea').val())
         console.log(input)
         for (var index = 1; index <= input; index++) {
             playPingPong(index)
+            
         }
     });
-
 
 });
 

@@ -78,5 +78,14 @@ body {
     display: none
 }
 
+#playBtnBtn {
+    font-size: 28px;
+    letter-spacing: 0.2em;
+}
+
+.totalResults {
+    display: none;
+}
+
 
 
