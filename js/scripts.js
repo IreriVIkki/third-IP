@@ -18,32 +18,36 @@ $(document).ready(function(){
     }
 
     function totalPing(num){
-
-        if ((num % 3 === 0) && (num % 5 !== 0)) {
             var totalPing = 0
-            for (var index = 1; index <= num; index++) {
-                totalPing += 1
-            }
-            return totalPing
-        }else if ((num % 5 === 0) && (num % 3 !== 0)) {
             var totalPong = 0
-            for (var index = 1; index <= num; index++) {
-                totalPong += 1
-            }
-            return totalPong
-        }else if (num % 15 === 0) {
-            var totalPingPong = 0
-            for (var index = 1; index <= num; index++) {
-                totalPingPong += 1
-            }
-            return totalPingPong
-        }else{
             var totalNull = 0
-            for (var index = 1; index <= num; index++) {
-                totalNull += 1
+            var totalPingPong = 0
+
+        for (var index = 1; index <= num; index++) {
+            if ((num % 3 === 0) && (num % 5 !== 0)) {
+                for (var index = 1; index <= num; index++) {
+                    totalPing += 1
+                }
+                $('.totalResults1').text(totalPing)
+            } else if ((num % 5 === 0) && (num % 3 !== 0)) {
+                for (var index = 1; index <= num; index++) {
+                    totalPong += 1
+                }
+                $('.totalResults2').text(totalPong)
+            } else if (num % 15 === 0) {
+                for (var index = 1; index <= num; index++) {
+                    totalPingPong += 1
+                }
+                $('.totalResults3').text(totalPingPong)
+            } else {
+                for (var index = 1; index <= num; index++) {
+                    totalNull += 1
+                }
+                $('.totalResults4').text(totalNull)
             }
-            return totalNull
         }
+
+
     }
 
 
@@ -63,9 +67,13 @@ $(document).ready(function(){
         for (var index = 1; index <= input; index++) {
             playPingPong(index)
         }
-        $('#resultsSummary').show()
+        if(input > 0){
+            $('#resultsSummary').show();
+                totalPing(input)
+        }else{
+            alert('Please Enter A Valid Number!!!!')
+        }
     });
-
 });
 
 // $(document).ready(function () {
