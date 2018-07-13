@@ -63,7 +63,7 @@ $(document).ready(function(){
         for (var index = 1; index <= input; index++) {
             playPingPong(index)
         }
-        $('.totalResults').addClass('')
+        $('#resultsSummary').show()
     });
 
 });
