@@ -52,7 +52,8 @@ $(document).ready(function(){
 
     $('.playUser').click(function(){
         $('#clickToPlay').hide()
-        $('#userInputArea').show()
+        var tid = setTimeout($('#userInputArea').show(), 2000);
+        // $('#userInputArea').show()
         $('#playBtn').removeClass('hideButton')
     });
 
@@ -61,8 +62,8 @@ $(document).ready(function(){
         console.log(input)
         for (var index = 1; index <= input; index++) {
             playPingPong(index)
-            
         }
+        $('.totalResults').addClass('')
     });
 
 });
