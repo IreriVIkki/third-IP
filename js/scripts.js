@@ -9,11 +9,13 @@ $(document).ready(function(){
             $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-primary resultsP" id="results">Ping</span></div>')
             console.log('ping')
         }else if((num % 5 === 0) && (num % 3 !== 0)){
-            
+            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-primary resultsP" id="results">Ping</span></div>')
             console.log('pong')
         }else if(num % 15 === 0){
+            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-warning resultsP" id="results">Ping-Pong</span></div>')
             console.log('ping-pong')
         }else{
+            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-primary resultsP num" id="results"></span></div>')
             console.log(num)
         }
     }
