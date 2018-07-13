@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
     //  business logic
-
-    var input = 34
-
     function playPingPong(num){
         if((num % 3 === 0) && (num % 5 !== 0)){
             $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-primary resultsP">Ping</span></div>')
@@ -20,13 +17,10 @@ $(document).ready(function(){
         }
     }
 
-
-
-
-
     $('.playUser').click(function(){
         $('#userInputArea').show()
-        // var input = 
+        var input = parseInt($('#userInputArea').val())
+        console.log(input)
         for (var index = 1; index <= input; index++) {
             playPingPong(index)
         }

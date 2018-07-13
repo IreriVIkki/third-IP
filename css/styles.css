@@ -74,6 +74,9 @@ body {
     box-sizing: border-box;
     float: left;
 }
+.hideButton {
+    display: none
+}
 
 
 
