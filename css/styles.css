@@ -21,25 +21,24 @@ body {
     background-position: center;
     background-size: 100% auto;
     background-attachment: fixed;
+    animation-name: mainContainer;
+    animation-duration: 3s;
+    left: -28%;
 }
 
 .about {
+    left: -28%;
     position: relative;
     animation-name: about;
+    border-radius: 0px;
     animation-duration: 1.5s;
-    animation-delay: 3s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes about {
-    0%{left: -25%;}
-    20% {}
-    40%{}
-    60%{} 
-    80%{}
+@keyframes about{
     100%{left: 0%;
-    border-radius: 0% 60px 0px 0%;}
+    border-radius: 0px 60px 0px 0px;}
 }
 
 .about h3 {
@@ -50,8 +49,25 @@ body {
 #playArea {
     background: rgba(0, 0, 0, .5);
     width: auto;
+    left: 0px;
 }
 
 #userInputArea {
     display: none;
 }
+
+.pingResult {
+    width: auto;
+}
+
+#resultsContainer {
+    width: auto;
+}
+
+.resultsP {
+    border-radius: 7px;
+    width: auto;
+}
+
+
+
