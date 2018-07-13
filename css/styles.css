@@ -60,12 +60,19 @@ body {
 }
 
 #resultsContainer {
-    width: auto;
+    width: 45%;
+    box-sizing: border-box;
 }
 
 .resultsP {
     border-radius: 7px;
     width: auto;
+}
+
+#resultsSummary {
+    width: 45%;
+    box-sizing: border-box;
+    float: left;
 }
 
 
