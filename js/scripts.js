@@ -29,21 +29,25 @@ $(document).ready(function(){
                     totalPing += 1
                 }
                 $('.totalResults1').text(totalPing)
+                console.log(totalPing)
             } else if ((num % 5 === 0) && (num % 3 !== 0)) {
                 for (var index = 1; index <= num; index++) {
                     totalPong += 1
                 }
                 $('.totalResults2').text(totalPong)
+                console.log(totalPong)
             } else if (num % 15 === 0) {
                 for (var index = 1; index <= num; index++) {
                     totalPingPong += 1
                 }
                 $('.totalResults3').text(totalPingPong)
+                console.log(totalPingPong)
             } else {
                 for (var index = 1; index <= num; index++) {
                     totalNull += 1
                 }
                 $('.totalResults4').text(totalNull)
+                console.log(totalNull)
             }
         }
 
