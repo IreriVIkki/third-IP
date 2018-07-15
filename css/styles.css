@@ -19,25 +19,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;
-    background-attachment: fixed;
-    animation-name: mainContainer;
-    animation-duration: 3s;
-    left: -28%;
 }
 
 .about {
-    left: -28%;
     position: relative;
     animation-name: about;
     border-radius: 0px;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes about{
-    100%{left: 0%;
-    border-radius: 0px 60px 0px 0px;}
 }
 
 .about h3 {
@@ -46,10 +33,11 @@ body {
 }
 
 #playArea {
+    position: relative;
     background: rgba(0, 0, 0, .5);
     width: auto;
-    left: 0px;
 }
+
 
 #userInputArea {
     display: none;
@@ -75,7 +63,8 @@ body {
     float: left;
 }
 .hideButton {
-    display: none
+    display: none;
+    animation-duration: 500;
 }
 
 #playBtnBtn {
@@ -86,6 +75,10 @@ body {
 .totalResults {
     display: none;
 }
+/* 
+.clickToPlay {
+    animation-delay: 0.4s;
+} */
 
 
 

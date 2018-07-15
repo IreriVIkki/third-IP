@@ -59,9 +59,14 @@ $(document).ready(function(){
     // user logic
 
     $('.playUser').click(function(){
-        $('#clickToPlay').hide()
-        var tid = setTimeout($('#userInputArea').show(), 10000);
-        // $('#userInputArea').show()
+        $('#clickToPlay').addClass('animated slideOutDown');
+        var wait = setTimeout(function(){
+            $('#clickToPlay').addClass('hideButton');
+        }, 500);
+        $('#playBtn').addClass('animated zoomIn flipInX clickToPlay')
+        $('#userInputArea').addClass('animated slideInDown')
+        // var tid = setTimeout($('#userInputArea').show(), 10000);
+        $('#userInputArea').show()
         $('#playBtn').removeClass('hideButton')
     });
 

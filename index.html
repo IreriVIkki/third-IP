@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">
+    <!-- bootstrap cdn -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+    <!-- google fonts cdn -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- animate css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" integrity="sha256-00w68NO3TLuHjKRHJmjrrgJBDtG/6OhbJEu1gtHcsuo="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 
-<body class="text-light">
+<body class="animated text-light">
 
     <header>
-        <div class="jumbotron-fluid text-center  d-flex" id="header">
+        <div class="jumbotron-fluid text-center d-flex" id="header">
             <h1 class="display-1 text-success align-self-center m-auto">Ping-Pong</h1>
         </div>
     </header>
@@ -29,7 +32,7 @@
                 </div>
                 <h3 class="pb-4">About Ping Pong</h3>
                 <h4>Created by</h4>
-                <p>Victor Ireri</p>
+                <p class="p-2">Victor Ireri</p>
                 <h4>GitHub Username/URL</h4>
                 <p>url</p>
                 <h4>Level 2 test for</h4>
@@ -49,13 +52,13 @@
                     <div class="">
                         <input class="form-group" type="text" placeholder="Enter Your Number Here:" id="userInputArea">
                     </div>
+                    <div class="hideButton" id="playBtn">
+                        <button class="pl-5 pr-5 pb-2 pt-2 mt-3 btn btn-success" id="playBtnBtn">Start!</button>
+                    </div>
                     <div class="playUser">
                         <button class="pl-5 pr-5 pt-3 pb-3 mt-3 btn btn-warning playUser" id="clickToPlay">Click Here To Play!</button>
                     </div>
-                    <div class="hideButton"  id="playBtn">
-                        <button class="pl-5 pr-5 pb-2 pt-2 mt-3 btn btn-success" id="playBtnBtn">Start!</button>
-                    </div>
-                    <div class="hideButton" id="reload">
+                    <div class="hideButton">
                         <button class="btn btn-warning" type="submit" id="playAgain">Play Again!</button>
                     </div>
                 </div>
@@ -86,7 +89,7 @@
         </div> 
     </section>
 
-<div style="margin-top: 300px;"></div>Prep Full-
+    <div style="margin-top: 300px;"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
