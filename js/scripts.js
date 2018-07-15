@@ -61,10 +61,42 @@ $(document).ready(function(){
                 $('#playAgain').addClass('flipInX anim-loop jello');
                 $('#playAgain').removeClass('hideButton');
             }, 500);
+
+
+            var waitTime = parseInt(3000 / input);
+
+            var wait = setTimeout(function(){
+                $('.resultsDisplay').addClass('flipInX anim-delay-3');
+                $('.resultsDisplay').show();
+            }, 700);
+
+            var wait = setTimeout(function () {
+                $('.totalResults1').addClass('slideInDown');
+                $('.totalResults1').show();
+              }, 1100);
+
+            var wait = setTimeout(function () {
+                $('.totalResults2').addClass('slideInDown');
+                $('.totalResults2').show();
+            }, 1400);
+
+            var wait = setTimeout(function () {
+                $('.totalResults3').addClass('slideInDown');
+                $('.totalResults3').show();
+            }, 1700);
+
+            var wait = setTimeout(function () {
+                $('.totalResults4').addClass('slideInDown');
+                $('.totalResults4').show();
+            }, 2000);
+
+            
+
+
         }else{
             alert('Please Enter A Valid Number!!!!')
         }
-        jq
+
     });
 
     $('#playAgain').click(function () {
