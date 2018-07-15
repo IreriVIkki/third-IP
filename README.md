@@ -2,7 +2,7 @@
 
 #### Authored By Victor Ireri
 
-##Project Description
+## Project Description
 
  This is a simple website where one can play a simplified version of the famous game pingpong
 
@@ -18,7 +18,7 @@ when the page loads, click on the __yellow button__, enter a number in the input
 
 * __After the game runs, you get a summary of how many pings, pongs, pingpongs or misses you had__
 
-####**Project Development**
+#### **Project Development**
 
 1. This project is behaviour driven. all the steps in the code are designed to achieve defined tasks
 
