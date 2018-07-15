@@ -25,17 +25,17 @@ when the page loads, click on the __yellow button__, enter a number in the input
 2. Custon css classes have been used to complement the technologies used. Some of those custom classes include:
 
 ____________________________________________
-| .anim_loop | loops animation infinitly|
+| .anim_loop | loops animation infinitly |
 ______________________________________________
-| .anim-delay-1 | delays animation by 250ms|
+| .anim-delay-1 | delays animation by 250ms |
 ________________________________________________
-| .anim-delay-2 | delays animation by 500ms|
+| .anim-delay-2 | delays animation by 500ms |
 _______________________________________________
-| .anim-delay-3 | delays animation by 750ms|
+| .anim-delay-3 | delays animation by 750ms |
 ______________________________________________
-| .anim-delay-4 | delays animation by 1000ms|
+| .anim-delay-4 | delays animation by 1000ms |
 ______________________________________________
-| .hideButton | adds display: none do elements|
+| .hideButton | adds display: none do elements |
 ________________________________________________
 
 3. Languages used in the project include:
