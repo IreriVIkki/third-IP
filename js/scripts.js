@@ -49,14 +49,6 @@ $(document).ready(function(){
         }
     }
 
-    function sleeps(time){
-        var wait = setTimeout(function(){
-            console.log('waiting')
-        }, time)
-    }
-
-
-
     // user logic
 
     $('.playUser').click(function(){
