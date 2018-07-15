@@ -51,4 +51,4 @@ ________________________________________________
 
 ### Copyright Information 
 
-... Copyright (c) {2018}
+... Copyright (c) {2018} 
