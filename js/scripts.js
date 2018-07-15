@@ -34,15 +34,17 @@ $(document).ready(function(){
     // user logic
 
     $('.playUser').click(function(){
-        $('#clickToPlay').addClass('animated slideOutDown');
+        $('#clickToPlay').addClass('animated flipOutX');
         var wait = setTimeout(function(){
             $('#clickToPlay').addClass('hideButton');
         }, 500);
-        $('#playBtn').addClass('animated zoomIn flipInX clickToPlay')
-        $('#userInputArea').addClass('animated slideInDown')
-        // var tid = setTimeout($('#userInputArea').show(), 10000);
-        $('#userInputArea').show()
-        $('#playBtn').removeClass('hideButton')
+        var wait = setTimeout(function(){
+            $('#playBtn').addClass('animated zoomIn flipInX clickToPlay anim-delay-2');
+            $('#userInputArea').addClass('animated slideInDown anim-delay-3');
+            $('#playBtn').removeClass('hideButton')
+            $('#userInputArea').show();
+        }, 700);
+
     });
 
     $('#playBtn').click(function(){
