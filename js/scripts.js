@@ -60,11 +60,11 @@ $(document).ready(function(){
             var wait = setTimeout(function(){
                 $('#playAgain').addClass('flipInX anim-loop jello');
                 $('#playAgain').removeClass('hideButton');
-            }, 1000);
-
+            }, 500);
         }else{
             alert('Please Enter A Valid Number!!!!')
         }
+        jq
     });
 
     $('#playAgain').click(function () {
