@@ -20,13 +20,39 @@ $(document).ready(function(){
     function addTotalPing(num){
             if ((num % 3 === 0) && (num % 5 !== 0)) {
                 return 1
-            } else if ((num % 5 === 0) && (num % 3 !== 0)) {
-                return 1
-            } else if (num % 15 === 0) {
-                return 1
-            } else {
-                return 1
+            }else{
+                return 0
             }
+    }
+
+    function addTotalPong(num){
+        if ((num % 5 === 0) && (num % 3 !== 0)) {
+            return 1
+        } else {
+            return 0
+        }
+    }
+
+    function addTotalPingPong(num){
+        if (num % 15 === 0) {
+            return 1
+        } else {
+            return 0
+        }
+    }
+
+    function addTotalMiss(num){
+        if ((num % 3 !== 0) && (num % 5 !== 0)) {
+            return 1
+        } else {
+            return 0
+        }
+    }
+
+    function sleeps(time){
+        var wait = setTimeout(function(){
+            console.log('waiting')
+        }, time)
     }
 
 
@@ -71,26 +97,42 @@ $(document).ready(function(){
             }, 700);
 
             var wait = setTimeout(function () {
-                $('.totalResults1').addClass('slideInDown');
+                $('.totalResults1').addClass('zoomIn');
                 $('.totalResults1').show();
               }, 1100);
 
-            var wait = setTimeout(function () {
-                $('.totalResults2').addClass('slideInDown');
+            var wait1 = setTimeout(function () {
+                $('.totalResults2').addClass('zoomIn');
                 $('.totalResults2').show();
             }, 1400);
 
-            var wait = setTimeout(function () {
-                $('.totalResults3').addClass('slideInDown');
+            var wait2 = setTimeout(function () {
+                $('.totalResults3').addClass('zoomIn');
                 $('.totalResults3').show();
             }, 1700);
 
-            var wait = setTimeout(function () {
-                $('.totalResults4').addClass('slideInDown');
+            var wait3 = setTimeout(function () {
+                $('.totalResults4').addClass('zoomIn');
                 $('.totalResults4').show();
             }, 2000);
 
-            
+            var wait4 = setTimeout(function(){
+                totalPing = 0;
+                totalPong = 0;
+                totalPingPong = 0;
+                totalMiss = 0;
+                for(var index = 1; index <= input; index++){
+                    totalPing += addTotalPing(index);
+                    totalPong += addTotalPong(index);
+                    totalPingPong += addTotalPingPong(index);
+                    totalMiss += addTotalMiss(index);
+
+                    $('#piResults').text(totalPing + '  ');
+                    $('#poResults').text(totalPong);
+                    $('#pipoResults').text(totalPingPong);
+                    $('#missResults').text(totalMiss);
+                }
+            },1700)
 
 
         }else{
