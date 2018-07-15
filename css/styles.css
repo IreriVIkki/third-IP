@@ -77,7 +77,6 @@ body {
 }
 .hideButton {
     display: none;
-    animatiofixedn-duration: 500;
 }
 
 #playBtnBtn {
@@ -93,8 +92,14 @@ body {
     animation-delay: 0.4s;
 } */
 
-#results :hover {
-    bor
+#playAgain:hover {
+    animation: none;
+}
+
+#playAgain button:hover {
+    background-color: rgb(177, 166, 15);
+    font-size: 16px;
+
 }
 
 .anim-delay-1 {

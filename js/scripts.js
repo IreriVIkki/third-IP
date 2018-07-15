@@ -53,15 +53,15 @@ $(document).ready(function(){
         for (var index = 1; index <= input; index++) {
             playPingPong(index)
         }
-        var wait = setTimeout(function(){
-            $('#playAgain').addClass('');
-        })
         if(input > 0){
             $('#resultsSummary').addClass('animated slide');
-            $('#resultsSummary').show();
 
-            totalPing(input)
-            $('#reload').show()
+
+            var wait = setTimeout(function(){
+                $('#playAgain').addClass('flipInX anim-loop jello');
+                $('#playAgain').removeClass('hideButton');
+            }, 1000);
+
         }else{
             alert('Please Enter A Valid Number!!!!')
         }
