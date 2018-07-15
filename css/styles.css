@@ -122,4 +122,10 @@ body {
     animation-iteration-count: infinite;
 }
 
+.resultNum {
+    font-style: italic;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
 

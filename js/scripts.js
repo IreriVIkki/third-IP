@@ -86,7 +86,7 @@ $(document).ready(function(){
             var wait = setTimeout(function(){
                 $('#playAgain').addClass('flipInX anim-loop jello');
                 $('#playAgain').removeClass('hideButton');
-            }, 500);
+            }, 3500);
 
 
             var waitTime = parseInt(3000 / input);
