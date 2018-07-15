@@ -3,16 +3,16 @@ $(document).ready(function(){
     //  business logic
     function playPingPong(num){
         if((num % 3 === 0) && (num % 5 !== 0)){
-            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-primary resultsP">Ping</span></div>')
+            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-primary animated slideInDown anim-delay-2 resultsP">Ping</span></div>')
             console.log('ping')
         }else if((num % 5 === 0) && (num % 3 !== 0)){
-            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-success resultsP">Pong</span></div>')
+            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 anim-delay-2  bg-success animated slideInDown resultsP">Pong</span></div>')
             console.log('pong')
         }else if(num % 15 === 0){
-            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-warning resultsP">Ping-Pong</span></div>')
+            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 anim-delay-2  bg-warning animated slideInDown resultsP">Ping-Pong</span></div>')
             console.log('ping-pong')
         }else{
-            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 pb-1 pt-1 bg-secondary resultsP num">'+ num +'</span></div>')
+            $('#results').before('<div class="m-3"><span class="pl-5 pr-5 animated anim-delay-2  slideInDown pb-1 pt-1 bg-secondary resultsP num">' + num + '</span></div>')
             console.log(num)
         }
     }
@@ -39,8 +39,8 @@ $(document).ready(function(){
             $('#clickToPlay').addClass('hideButton');
         }, 500);
         var wait = setTimeout(function(){
-            $('#playBtn').addClass('animated zoomIn flipInX clickToPlay anim-delay-2');
-            $('#userInputArea').addClass('animated slideInDown anim-delay-3');
+            $('#playBtn').addClass('zoomIn flipInX clickToPlay anim-delay-2');
+            $('#userInputArea').addClass('slideInDown anim-delay-3');
             $('#playBtn').removeClass('hideButton')
             $('#userInputArea').show();
         }, 700);
@@ -53,6 +53,9 @@ $(document).ready(function(){
         for (var index = 1; index <= input; index++) {
             playPingPong(index)
         }
+        var wait = setTimeout(function(){
+            $('#playAgain').addClass('');
+        })
         if(input > 0){
             $('#resultsSummary').addClass('animated slide');
             $('#resultsSummary').show();
