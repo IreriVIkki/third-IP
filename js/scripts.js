@@ -17,41 +17,16 @@ $(document).ready(function(){
         }
     }
 
-    function totalPing(num){
-            var totalPing = 0
-            var totalPong = 0
-            var totalNull = 0
-            var totalPingPong = 0
-
-        for (var index = 1; index <= num; index++) {
+    function addTotalPing(num){
             if ((num % 3 === 0) && (num % 5 !== 0)) {
-                for (var index = 1; index <= num; index++) {
-                    totalPing += 1
-                }
-                $('.totalResults1').text(totalPing)
-                console.log(totalPing)
+                return 1
             } else if ((num % 5 === 0) && (num % 3 !== 0)) {
-                for (var index = 1; index <= num; index++) {
-                    totalPong += 1
-                }
-                $('.totalResults2').text(totalPong)
-                console.log(totalPong)
+                return 1
             } else if (num % 15 === 0) {
-                for (var index = 1; index <= num; index++) {
-                    totalPingPong += 1
-                }
-                $('.totalResults3').text(totalPingPong)
-                console.log(totalPingPong)
+                return 1
             } else {
-                for (var index = 1; index <= num; index++) {
-                    totalNull += 1
-                }
-                $('.totalResults4').text(totalNull)
-                console.log(totalNull)
+                return 1
             }
-        }
-
-
     }
 
 
@@ -77,6 +52,7 @@ $(document).ready(function(){
             playPingPong(index)
         }
         if(input > 0){
+            $('#resultsSummary').addClass('animated slide');
             $('#resultsSummary').show();
 
             totalPing(input)
