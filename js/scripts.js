@@ -76,8 +76,9 @@ $(document).ready(function(){
 
 
             var wait = setTimeout(function(){
-                $('#playAgain').addClass('flipInX anim-loop jello');
+                $('#playAgain').addClass('fadeInDown');
                 $('#playAgain').removeClass('hideButton');
+                $('#playAgain').addClass('flipInX anim-loop');
             }, 3500);
 
 
@@ -124,7 +125,7 @@ $(document).ready(function(){
                     $('#pipoResults').text(totalPingPong);
                     $('#missResults').text(totalMiss);
                 }
-            },1700)
+            },2700)
 
 
         }else{
